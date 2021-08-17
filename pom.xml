@@ -82,7 +82,7 @@
         <version>3.0.3</version>
         <configuration>
           <processTypes>
-            <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+            <web>java -Dserver.port=$PORT $JAVA_OPTS -cp target/classes:target/dependency/* com.algaworks.crm.algacrmapi.AlgacrmApiApplication</web>
           </processTypes>
           <jdkVersion>16</jdkVersion>
         </configuration>
