@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "b53fd09f-b040-42fd-a0ac-69768a5dea07",
+		"name": "algacrm-api-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://nameless-falls-38710.herokuapp.com/clientes",
+					"protocol": "https",
+					"host": [
+						"nameless-falls-38710",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Novo Cliente",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-XSRF-TOKEN",
+						"value": "{{xsrf-token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"maria\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nameless-falls-38710.herokuapp.com/clientes",
+					"protocol": "https",
+					"host": [
+						"nameless-falls-38710",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
