@@ -4,6 +4,20 @@ Tutorial by [AlgaWorks](https://www.youtube.com/channel/UCIPQ0ZqTl5e5U2OFKENOh9g
 
 - [:clapper: Video on YouTube (:brazil:)](https://youtu.be/9GWK9A79tEc)
 
+## Table of Contents
+
+- [Description](#description)
+- [Project Summary](#project-summary)
+- [API Documentation](#api-documentation)
+  - [Get Clients](#get-clients)
+    - [Request](#request)
+    - [Sample Response (200 OK)](#sample-response-200-ok)
+  - [Add Client](#add-client)
+    - [Request](#request-1)
+    - [Sample Request Body](#sample-request-body)
+    - [Sample Response (201 Created)](#sample-response-201-created)
+- [Deployment](#deployment)
+
 ## Description
 
 From the YouTube description:
@@ -39,7 +53,7 @@ Retrieves a list of all clients.
 
 #### Request
 
-```
+```http
 GET /clientes
 ```
 
@@ -64,7 +78,7 @@ Add a new client to the application.
 
 #### Request
 
-```
+```http
 POST /clientes
 ```
 
